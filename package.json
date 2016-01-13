@@ -1,0 +1,23 @@
+{
+  "name": "com-github-lucasrpb-drivers-cassandra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cassandra",
+    "nodejs",
+    "node",
+    "driver"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cassandra-driver": "^3.0.0",
+    "com-github-lucasrpb-utils": "^1.0.0",
+    "q": "^1.4.1",
+    "winston": "^2.1.1"
+  }
+}
