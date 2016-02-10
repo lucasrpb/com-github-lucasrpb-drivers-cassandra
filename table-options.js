@@ -317,6 +317,10 @@ var TableOptions = function(){
 	this.$speculative_retry = null;
 };
 
+TableOptions.create = function(){
+	return new TableOptions();
+};
+
 var Caching = {
 	ALL: "'all'",
 	KEYS_ONLY: "'keys_only'",
