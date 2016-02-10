@@ -2,8 +2,8 @@ var cassandra = require('./main');
 var TYPES = cassandra.TYPES.DATA_TYPES;
 var DATA_TYPES = cassandra.TYPES.DATA_TYPES;
 var TYPE_CODES = cassandra.TYPES.TYPE_CODES;
-var Table = cassandra.TABLE;
-var Database = cassandra.DATABASE;
+var Table = cassandra.Table;
+var Database = cassandra.Database;
 var UDT = cassandra.UDT;
 var index = cassandra.INDEX;
 var logger = require('winston');
@@ -23,7 +23,7 @@ var client = new Cassandra.Client({
 	/*, keyspace: 'demo'*/
 });
 
-var TableOptions = cassandra.TABLE_OPTIONS;
+var TableOptions = cassandra.TableOptions;
 
 var Test = Database.create('test', client, logger, {
 	/*class: Database.CLASSES.NETWORK_TOPOLOGY,

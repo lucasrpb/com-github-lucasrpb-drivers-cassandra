@@ -7,9 +7,9 @@ var TableOptions = require('./table-options');
 
 module.exports = {
 	TYPES: Types,
-	TABLE: Table,
-	DATABASE: Database,
+	Table: Table,
+	Database: Database,
 	UDT: UDT,
 	INDEX: Index,
-	TABLE_OPTIONS: TableOptions
+	TableOptions: TableOptions
 };
