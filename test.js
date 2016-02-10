@@ -23,7 +23,7 @@ var client = new Cassandra.Client({
 	/*, keyspace: 'demo'*/
 });
 
-var TableOptions = require('./table-options');
+var TableOptions = cassandra.TABLE_OPTIONS;
 
 var Test = Database.create('test', client, logger, {
 	/*class: Database.CLASSES.NETWORK_TOPOLOGY,
