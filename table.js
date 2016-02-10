@@ -117,11 +117,11 @@ Table.prototype.create = function(check){
 	
 	var opts = this.$options;
 
-	if(opts){
+	if(opts && (opts = opts.$build())){
 		if(co){
-			cql += ' AND '+opts.$build();
+			cql += ' AND '+opts;
 		} else {
-			cql += ' WITH '+opts.$build();
+			cql += ' WITH '+opts;
 		}
 	}
 
